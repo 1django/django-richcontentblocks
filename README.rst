@@ -37,5 +37,9 @@ An example of loading a rich content block, with a key 'my-block' in a template:
         {% rich_content_block 'my-block' %}
     </div>
 
+The first time a content block loads, it will be placed in cache. Subsequent loads of the content block will use the cached item.
+
+If an invalid content block key is used to when attempting to load a content object, an error message is displayed.
+
 
 .. _ckeditor: https://github.com/django-ckeditor/django-ckeditor
