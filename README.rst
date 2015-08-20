@@ -2,7 +2,10 @@
 rich-content-blocks
 =====
 
-Todo...
+Very simple CMS-like content blocks for use in a django project.  Includes:
+1. Admin interface for creating/managing content blocks (including a rich text editor)
+
+2. Template tag for retrieving/displaying content block in a django project template. Django cache is leveraged, when possible, in loading content block.
 
 Quick start
 -----------
