@@ -1,12 +1,21 @@
 =====
-rich-content-blocks
+django-richcontentblocks
 =====
 
-Very simple CMS-like content blocks for use in a django project.  Includes:
+Very simple CMS-like content blocks for use in a django project.  
+
+Features:
 
 1. Admin interface for creating/managing content blocks (including a rich text editor)
 
 2. Template tag for retrieving/displaying content block in a django project template. Django cache is leveraged, when possible, in loading content block.
+
+Inspiration and more full featured version: django-tinycontent_
+
+Installation
+------------
+Just::
+    pip install django-richcontentblocks
 
 Quick start
 -----------
@@ -25,9 +34,9 @@ Quick start
 
 You should now have an admin tool with the ability to create rich content blocks.
 
-Using in template
+Usage in template
 ------------------
-An example of loading a rich content block, with a key 'my-block' in a template::
+An example of loading a rich content block, with a key value of ``my-block`` in a template::
 
     {% load rich_content_block_tags %}
     <div>
@@ -43,3 +52,4 @@ If an invalid content block key is used to when attempting to load a content obj
 
 
 .. _ckeditor: https://github.com/django-ckeditor/django-ckeditor
+.. _django-tinycontent: https://github.com/dominicrodger/django-tinycontent
