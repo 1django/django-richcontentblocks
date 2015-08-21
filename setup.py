@@ -13,10 +13,11 @@ setup(
     packages=['richcontentblocks'],
     include_package_data=True,
     license='BSD License', 
-    description='Simple (rich) content blocks for use on front end templates.',
+    description='Simple (rich) content blocks for use on front end templates. With admin tool.',
     long_description=README,
-    author='Emerge Interactive',
+    author='Django Radonich-Camp',
     author_email='django@emergeinteractive.com',
+    url = 'https://github.com/django-emerge/django-richcontentblocks',
     install_requires=[
         'django-ckeditor>=4.5.1'
     ],
@@ -24,7 +25,7 @@ setup(
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License', # example license
+        'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
