@@ -9,15 +9,16 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='richcontentblocks',
-    version='0.3',
+    version='0.4.1',
     packages=['richcontentblocks'],
     include_package_data=True,
-    license='BSD License', 
+    license='MIT License', 
     description='Simple (rich) content blocks for use on front end templates. With admin tool.',
     long_description=README,
     author='Django Radonich-Camp',
     author_email='django@emergeinteractive.com',
     url = 'https://github.com/django-emerge/django-richcontentblocks',
+    download_url = 'https://github.com/django-emerge/django-richcontentblocks/tarball/0.4',
     install_requires=[
         'django-ckeditor>=4.5.1'
     ],
@@ -25,7 +26,7 @@ setup(
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
