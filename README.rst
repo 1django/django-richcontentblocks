@@ -14,8 +14,7 @@ Inspiration and more full featured version: django-tinycontent_
 
 Installation
 ------------
-Just::
-    pip install django-richcontentblocks
+Run: ``pip install django-richcontentblocks``
 
 Quick start
 -----------
