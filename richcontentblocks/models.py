@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.signals import post_save, post_delete
 from django.template.defaultfilters import slugify
 from ckeditor.fields import RichTextField
 from django.core.cache import cache
@@ -46,3 +47,16 @@ class Content(models.Model):
                 obj = None
 
         return obj
+
+
+def clear_content_from_cache(sender, instance, **kwargs):
+    """
+    :description - clears content block from cache if it exists
+    """
+    obj = cache.get(instance.key)
+    if obj:
+        cache.delete(instance.key)
+
+# register the signal
+post_save.connect(clear_content_from_cache, sender=Content, dispatch_uid="save_clear_content_from_cache")
+post_delete.connect(clear_content_from_cache, sender=Content, dispatch_uid="delete_clear_content_from_cache")
