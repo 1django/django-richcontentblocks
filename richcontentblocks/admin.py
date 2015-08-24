@@ -8,5 +8,14 @@ class ContentAdmin(admin.ModelAdmin):
     list_filter = ('content_group', 'created', 'updated')
     readonly_fields = ('created', 'updated', 'key',)
     ordering = ('content_group',)
+    fieldsets = (
+        (None, {
+            'fields': ('title', 'content', 'content_group')
+        }),
+        ('Extra info', {
+            'fields': ('key', 'created', 'updated')
+        }),
+    )
+    exclude = ('content_type',)
 
 admin.site.register(Content, ContentAdmin)
