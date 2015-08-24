@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-richcontentblocks',
-    version='0.4.2',
+    version='0.4.4',
     packages=['richcontentblocks'],
     include_package_data=True,
     license='MIT License', 
@@ -18,7 +18,7 @@ setup(
     author='Django Radonich-Camp',
     author_email='django@emergeinteractive.com',
     url = 'https://github.com/django-emerge/django-richcontentblocks',
-    download_url = 'https://github.com/django-emerge/django-richcontentblocks/tarball/0.4.2',
+    download_url = 'https://github.com/django-emerge/django-richcontentblocks/tarball/0.4.4',
     install_requires=[
         'django-ckeditor>=4.5.1'
     ],
